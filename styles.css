@@ -1,0 +1,49 @@
+/*styles.css - HTML Kitchen Sink Site*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, sans-serif;
+    line-height: 1.6x;
+    max-width: 860px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    color: #222;
+}
+
+nav{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+nav a{
+    margin-right: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2;
+}
+
+pre{
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.75rem;
+    text-align: left;
+}
+
+img, video, audio{
+    max-width: 100%;
+}
