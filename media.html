@@ -23,7 +23,39 @@
     </nav>
 </header>
 <main>
+    <figure>
+        <img src="assets/locks.jpg" alt="Padlocks around a shield" width="600" height="400">
+        <figcaption>Padlocks around a shield</figcaption>
+    </figure>
+    <picture>
+        <source media="(min-width: 800px)" srcset="assets/locks.jpg">
+        <source media="(min-width: 400px)" srcset="assets/locks.jpg">
+        <img src="assets/locks.jpg" alt="Padlocks around a shield" width="600" height="400">
+    </picture>
 
+    <audio controls loop muted>
+        <!--placeholder for audio file-->    
+        <source src="assets/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls poster="assets/locks.jpg" width="600">
+        <source src="assets/sample.mp4" type="video/mp4">
+    <track kind="captions" src="assets/captions.vtt" srclang="en" label="English">
+        Your browser does not support the video element.
+    </video>
+    <iframe 
+    src="https://www.youtube.com/embed/inWWhr5tnEA" 
+    width="600" 
+    height="400" 
+    title="Cybersecurity Introduction Video"
+    allowfullscreen>
+    </iframe>
+
+    <embed src="assets/cyberhands.pdf" type="application/pdf" width="600" height="400">
+    <object data="assets/cyberhands.pdf" type="application/pdf" width="600" height="400">
+    <p>Your browser does not support this object. <a href="assets/cyberhands.pdf">Download the PDF</a> instead.</p>
+</object>
 </main>
     <footer>
         <p>&copy; 2026 William Blanco. All rights reserved.</p>
