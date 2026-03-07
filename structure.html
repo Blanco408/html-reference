@@ -23,6 +23,9 @@
         </nav>
     </header>
     <main>
+        <div class="security-notice">
+            <p>This page demonstrates HTML document structure and sectioning elements.</p>
+        </div>
         <nav>
             <h2>Table of Contents</h2>
             <ul>
@@ -33,14 +36,12 @@
         </nav>
         <section>
             <h2>Security Best Practices</h2>
-            
             <h3>Top Security Tools</h3>
             <ul>
                 <li>Firewalls</li>
                 <li>Antivirus Software</li>
                 <li>Encryption Tools</li>
             </ul>
-
             <h3>Steps to Secure Your System</h3>
             <ol start="1" reversed>
                 <li value="5">Enable MFA on all accounts</li>
@@ -49,12 +50,13 @@
                 <li value="2">Use a VPN on public networks</li>
                 <li value="1">Back up your data regularly</li>
             </ol>
-
             <h3>Types of Network Attacks</h3>
             <ul>
-                <li>Network Attacks
+                <li>
+                    Network Attacks
                     <ul>
-                        <li>DDoS
+                        <li>
+                            DDoS
                             <ul>
                                 <li>Volumetric attacks</li>
                                 <li>Protocol attacks</li>
@@ -64,23 +66,19 @@
                 </li>
             </ul>
         </section>
-        
         <article>
             <header>
                 <h2>Understanding Network Security</h2>
             </header>
             <p>Network security involves protecting the integrity and usability of your network and data.</p>
-            
             <section>
                 <h3>Firewalls</h3>
                 <p>Firewalls monitor and control incoming and outgoing network traffic based on security rules.</p>
             </section>
-            
             <section>
                 <h3>Intrusion Detection Systems</h3>
                 <p>IDS monitors network traffic for suspicious activity and issues alerts when detected.</p>
             </section>
-            
             <aside>
                 <p>Tip: Always keep your firewall updated with the latest security rules.</p>
             </aside>
@@ -88,6 +86,49 @@
                 <p>Published on: March 07, 2026</p>
             </footer>
         </article>
+        <section>
+            <h2>Cybersecurity FAQ</h2>
+            <details>
+                <summary>What is a Zero-Day Exploit?</summary>
+                <p>A zero-day exploit targets an unknown vulnerability before a patch exists.</p>
+            </details>
+            <details>
+                <summary>What is Social Engineering?</summary>
+                <p>Social engineering manipulates people into revealing confidential information.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Cybersecurity Glossary</h2>
+            <dl>
+                <dt>Firewall</dt>
+                <dd>A network security device that monitors and filters incoming and outgoing network traffic.</dd>
+                <dt>Encryption</dt>
+                <dd>The process of converting data into a coded format to prevent unauthorized access.</dd>
+                <dt>Phishing</dt>
+                <dd>A cyberattack that uses disguised email to trick recipients into revealing sensitive information.</dd>
+                <dt>VPN</dt>
+                <dd>A Virtual Private Network that creates a secure encrypted connection over a less secure network.</dd>
+            </dl>
+        </section>
+        <button onclick="document.getElementById('securityDialog').showModal()">
+            Show Security Warning
+        </button>
+        <dialog id="securityDialog">
+            <h2>Security Warning</h2>
+            <p>Your system has not been updated in 30 days. Please update your security software immediately.</p>
+            <button onclick="document.getElementById('securityDialog').close()">Close</button>
+        </dialog>
+        <menu>
+            <li><button>Scan System</button></li>
+            <li><button>Update Firewall</button></li>
+            <li><button>Run Backup</button></li>
+        </menu>
+        <template id="threat-template">
+            <div class="threat">
+                <h3>Threat Name</h3>
+                <p>Threat description goes here.</p>
+            </div>
+        </template>
     </main>
     <footer>
         <p>&copy; 2026 William Blanco. All rights reserved.</p>
