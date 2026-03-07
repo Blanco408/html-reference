@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This file contains the tables for this HW assignment">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tables file for this homework assignment</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Tables Page</h1>
+        <nav>
+            <ul>
+                <li><a href="deprecated.html">Deprecated</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="text.html">Text</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>Cybersecurity Threats and Vulnerabilities</caption>
+            <colgroup>
+                <col span="1">
+                <col span="1">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th id="threat" scope="col">Threat/Vulnerability</th>
+                    <th id="description" scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="threat">Phishing</td>
+                    <td headers="description">A fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity.</td>
+                </tr>
+                <tr>
+                    <td headers="threat">Malware</td>
+                    <td headers="description">Malicious software designed to disrupt, damage, or gain unauthorized access to computer systems.</td>
+                </tr>
+                <tr>
+                    <td headers="threat">Ransomware</td>
+                    <td headers="description">A type of malware that encrypts a victim's files and demands payment for the decryption key.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Note: This table provides a brief overview of common cybersecurity threats and vulnerabilities.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2026 William Blanco. All rights reserved.</p>
+    </footer>
 </body>
 </html>
