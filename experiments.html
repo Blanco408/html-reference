@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Experiments page for the Kitchen Sink HW">
+    <link rel="stylesheet" href="styles.css">
+    <title>Experiments page for the Kitchen Sink HW</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Experiments Page</h1>
+        <nav>
+            <ul>
+                <li><a href="deprecated.html">Deprecated</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="structure.html">Structure</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="text.html">Text</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- EXPERIMENT 1: contenteditable attribute -->
+        <section>
+            <h2>Experiment 1: The contenteditable Attribute</h2>
+            <p>Click inside the box below and try editing the text directly in the browser:</p>
+            <div contenteditable="true" style="border: 1px solid #ccc; padding: 1rem; background: #f9f9f9;">
+                <p>Threat Report — Click here to edit this text directly in the browser. No JavaScript required.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 2: hidden attribute -->
+        <section>
+            <h2>Experiment 2: The hidden Attribute</h2>
+            <p>The paragraph below exists in the HTML but is hidden using the hidden attribute. Inspect the page in DevTools to see it.</p>
+            <p hidden>CLASSIFIED: This message is hidden using the hidden attribute. It exists in the DOM but is not rendered on the page.</p>
+            <p>The hidden element is above this paragraph in the source code but invisible on the page.</p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 3: spellcheck attribute on textarea -->
+        <section>
+            <h2>Experiment 3: spellcheck Attribute on textarea</h2>
+            <p>The first textarea has spellcheck enabled, the second has it disabled. Try typing a misspelled word in each:</p>
+            <label for="spellcheck-on">Spellcheck ON:</label>
+            <textarea id="spellcheck-on" spellcheck="true" rows="3" cols="40" placeholder="Type a misspelled word here..."></textarea>
+            <label for="spellcheck-off">Spellcheck OFF:</label>
+            <textarea id="spellcheck-off" spellcheck="false" rows="3" cols="40" placeholder="Type a misspelled word here..."></textarea>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 William Blanco. All rights reserved.</p>
+    </footer>
 </body>
 </html>
